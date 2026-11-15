@@ -1,2 +1,2 @@
-# No external third-party packages required.
-# This project runs purely on Python standard libraries (sqlite3, hashlib, datetime).
+streamlit
+pandas
