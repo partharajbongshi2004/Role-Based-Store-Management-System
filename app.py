@@ -2,7 +2,7 @@ import hashlib
 import sqlite3
 from datetime import datetime
 
-DB_NAME = "store_management.db"
+DB_NAME = "store_rbac_v2.db"
 
 
 class DatabaseManager:
