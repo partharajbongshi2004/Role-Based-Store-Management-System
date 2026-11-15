@@ -25,7 +25,8 @@ class DatabaseManager:
                 role TEXT NOT NULL
             )
         """)
-         self.cursor.execute("""
+         
+        self.cursor.execute("""
             CREATE TABLE IF NOT EXISTS products (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 name TEXT UNIQUE NOT NULL,
