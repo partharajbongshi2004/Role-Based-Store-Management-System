@@ -100,6 +100,7 @@ else:
     choice = st.sidebar.radio("মেনু নির্বাচন করুন", menu)
 
     if choice == "📦 স্টক দেখুন":
+        
         st.subheader("বর্তমান পণ্যের তালিকা")
         df = pd.read_sql_query("SELECT id, name AS 'পণ্যের নাম', price AS 'দাম', stock AS 'স্টক' FROM products", db.conn)
         st.dataframe(df, use_container_width=True)
